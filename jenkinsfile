@@ -30,7 +30,7 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'docker123') {
-                    sh 'docker tag calculator nikita00011/calculator:latest'
+                    sh 'docker tag calculator calculator:latest'
                     sh 'docker push nikki00011/calculator'
                     }
                  }
